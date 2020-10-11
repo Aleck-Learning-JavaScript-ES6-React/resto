@@ -31,10 +31,17 @@ const deleteFromCart = (id) => {
     }
 }
 
+const clearCart = () => {
+    return {
+        type: 'CLEAR_CART'
+    }
+}
+
 export  {
     menuLoaded,
     menuRequested,
     menuError,
     addedToCart,
-    deleteFromCart
+    deleteFromCart,
+    clearCart
 }
