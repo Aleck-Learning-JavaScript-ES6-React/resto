@@ -1,7 +1,7 @@
 import React from 'react';
 import RestoServiceContext from '../resto-service-context';
 
-const WithRestoService = (Wrapped) => () => {
+const WithRestoService = () => (Wrapped) => {
     return (props) => {
         return (
            <RestoServiceContext.Consumer>
